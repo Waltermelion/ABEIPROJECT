@@ -7,29 +7,6 @@ O jogo passa-se em `primeira pessoa` num mundo `3D`, movimento `WASD`, controla-
 ## Narrativa: 
 Jogador começa no nível `0` das `backrooms`, percorre o labirinto com cuidado até encontrar a saída(jogador pode morrer se encontrar a entidade), ao cair(?) na saída entra no próximo nível... (Nível 285; Nível Torment)
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ## Estética: 
 Arquitetura e interior design anos 90.
 
