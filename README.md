@@ -12,10 +12,10 @@ Arquitetura e interior design anos 90.
 
 ## Tecnologia: 
 #### Input:
-- WASD - Movimento do personagem
-- Rato - Movimento da Câmara
+- `WASD` - Movimento do personagem
+- `Rato` - Movimento da Câmara
 - tecla `E` ou botão `1` do rato - interação com o ambiente e os puzzles
-- Esc - Menu de pausa
+- `Esc` - Menu de pausa
 
 #### Misc:
 - Jogador pode interagir com a maior parte dos elementos dentro dos backrooms;
