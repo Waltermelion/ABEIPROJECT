@@ -15,7 +15,7 @@ public class EnemyAi : MonoBehaviour
 
     public Animator playerAnimator;
 
-    private bool playerIsDead = false;
+    private bool playerIsDead;
 
     //para patrulhar
     public Vector3 walkPoint;
