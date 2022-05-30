@@ -24,7 +24,7 @@ public class playermovement : MonoBehaviour
         if (Physics.Raycast(transform.position, fwd, out hit) && hit.collider.tag == "enemy")
         {
             Debug.Log("Inimigo a destruir perto!");
-            hit.collider.gameObject.active = false;
+            hit.collider.gameObject.SetActive(false);
         }
     }
 }
