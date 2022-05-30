@@ -26,6 +26,5 @@ public class playermovement : MonoBehaviour
             Debug.Log("Inimigo a destruir perto!");
             hit.collider.gameObject.active = false;
         }
-
     }
 }
