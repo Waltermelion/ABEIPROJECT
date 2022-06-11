@@ -271,9 +271,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 5
   footStepSound:
-  - {fileID: 0}
+  - {fileID: 8300000, guid: f9441c5735ca94941baddd808293bbe2, type: 3}
+  - {fileID: 8300000, guid: 31c78ea2cdf20ed45bbb4175b8928869, type: 3}
+  - {fileID: 8300000, guid: 96ba023dbc7b5b34eb68b0c2b9deeac3, type: 3}
+  - {fileID: 8300000, guid: 3af633c2ce793394db4244ed5be81bd0, type: 3}
   jumpSound: {fileID: 0}
   audioSource1: {fileID: 4084283528545214309}
+  audioPlayRate: 2
 --- !u!114 &4350740967434164136
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -342,7 +346,7 @@ AudioSource:
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
