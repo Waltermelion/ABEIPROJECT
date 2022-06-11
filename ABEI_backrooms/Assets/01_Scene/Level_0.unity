@@ -4098,6 +4098,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1229002971243250745, guid: 453fcae98e52d404989991c7cab1eded, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3518234274974171152, guid: 453fcae98e52d404989991c7cab1eded, type: 3}
       propertyPath: player
       value: 
@@ -4157,6 +4161,34 @@ PrefabInstance:
     - target: {fileID: 3518234274974171166, guid: 453fcae98e52d404989991c7cab1eded, type: 3}
       propertyPath: m_Name
       value: Enemy
+      objectReference: {fileID: 0}
+    - target: {fileID: 3988498305878309306, guid: 453fcae98e52d404989991c7cab1eded, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.3537072
+      objectReference: {fileID: 0}
+    - target: {fileID: 3988498305878309306, guid: 453fcae98e52d404989991c7cab1eded, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.3537072
+      objectReference: {fileID: 0}
+    - target: {fileID: 3988498305878309306, guid: 453fcae98e52d404989991c7cab1eded, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.3537072
+      objectReference: {fileID: 0}
+    - target: {fileID: 3988498305878309306, guid: 453fcae98e52d404989991c7cab1eded, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.00089529
+      objectReference: {fileID: 0}
+    - target: {fileID: 3988498305878309306, guid: 453fcae98e52d404989991c7cab1eded, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -1.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3988498305878309306, guid: 453fcae98e52d404989991c7cab1eded, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.27944
+      objectReference: {fileID: 0}
+    - target: {fileID: 4599943174177030235, guid: 453fcae98e52d404989991c7cab1eded, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 453fcae98e52d404989991c7cab1eded, type: 3}
