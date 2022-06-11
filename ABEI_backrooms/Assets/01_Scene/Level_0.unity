@@ -11249,6 +11249,14 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3152896633778556968, guid: 12c673aecbfbcfe4f85d7dbe0cd77443, type: 3}
+      propertyPath: _amplitude
+      value: 0.005
+      objectReference: {fileID: 0}
+    - target: {fileID: 3152896633778556968, guid: 12c673aecbfbcfe4f85d7dbe0cd77443, type: 3}
+      propertyPath: _frequency
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 4171943381206475222, guid: 12c673aecbfbcfe4f85d7dbe0cd77443, type: 3}
       propertyPath: VideoMode
       value: 0
