@@ -17,7 +17,7 @@ RenderSettings:
   m_Fog: 1
   m_FogColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
   m_FogMode: 3
-  m_FogDensity: 0.01
+  m_FogDensity: 0.02
   m_LinearFogStart: 0
   m_LinearFogEnd: 300
   m_AmbientSkyColor: {r: 0.212, g: 0.227, b: 0.259, a: 1}
@@ -4199,6 +4199,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 512891376438856797, guid: 12c673aecbfbcfe4f85d7dbe0cd77443, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3129932109893544512, guid: 12c673aecbfbcfe4f85d7dbe0cd77443, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4171943381206475222, guid: 12c673aecbfbcfe4f85d7dbe0cd77443, type: 3}
+      propertyPath: VideoMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4171943381206475222, guid: 12c673aecbfbcfe4f85d7dbe0cd77443, type: 3}
+      propertyPath: FilterQuality
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4350740966239763378, guid: 12c673aecbfbcfe4f85d7dbe0cd77443, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4350740967434164129, guid: 12c673aecbfbcfe4f85d7dbe0cd77443, type: 3}
       propertyPath: m_Name
       value: Player
@@ -4247,8 +4267,28 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4350740967434164135, guid: 12c673aecbfbcfe4f85d7dbe0cd77443, type: 3}
-      propertyPath: m_Enabled
+    - target: {fileID: 4909009047983164149, guid: 12c673aecbfbcfe4f85d7dbe0cd77443, type: 3}
+      propertyPath: BBits
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 4909009047983164149, guid: 12c673aecbfbcfe4f85d7dbe0cd77443, type: 3}
+      propertyPath: GBits
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 4909009047983164149, guid: 12c673aecbfbcfe4f85d7dbe0cd77443, type: 3}
+      propertyPath: RBits
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 4909009047983164149, guid: 12c673aecbfbcfe4f85d7dbe0cd77443, type: 3}
+      propertyPath: Curvature
+      value: 0.586
+      objectReference: {fileID: 0}
+    - target: {fileID: 4909009047983164149, guid: 12c673aecbfbcfe4f85d7dbe0cd77443, type: 3}
+      propertyPath: VideoMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4909009047983164149, guid: 12c673aecbfbcfe4f85d7dbe0cd77443, type: 3}
+      propertyPath: FilterQuality
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
