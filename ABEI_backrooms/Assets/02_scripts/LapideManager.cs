@@ -1,18 +1,25 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class LapideManager : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public LapideRotate[] lapides;
+    public bool allRotateded;
 
-    // Update is called once per frame
+    public Animator statueAnime;
     void Update()
     {
-        
+        if (allRotated())
+            
+            return;
+        allRotated();
+    }
+    private bool allRotated() {
+        for ( int i = 0; i < lapides.Length; ++i ) {
+            if ( lapides[ i ].correctlyRotated == false ) {
+                return false;
+            }
+        }
+        allRotateded = true;
+        return true;
     }
 }

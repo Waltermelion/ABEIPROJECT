@@ -6,6 +6,7 @@ TagManager:
   tags:
   - exit
   - lapide
+  - estatua
   layers:
   - Default
   - TransparentFX
