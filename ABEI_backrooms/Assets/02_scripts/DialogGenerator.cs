@@ -1,22 +1,18 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 public class DialogGenerator : MonoBehaviour
 {
-    [SerializeField] private TextMeshProUGUI textComponent;
+    public InputManager ipt;
+    
+    public TextMeshProUGUI textComponent;
+    [SerializeField] private GameObject dialogueBox;
     [SerializeField] private string[] lines;
     [SerializeField] private float textSpeed;
-
     private int index;
-    void Start()
-    {
-        textComponent.text = string.Empty;
-        StartDialogue();
-    }
     void Update()
     {
-        if (Input.GetMouseButton(0))
+        if (ipt.onFoot.MouseClick.triggered)
         {
             if (textComponent.text == lines[index])
             {
@@ -29,13 +25,13 @@ public class DialogGenerator : MonoBehaviour
             }
         }
     }
-
-    void StartDialogue()
+    public void StartDialogue()
     {
+        dialogueBox.SetActive(true);
+        textComponent.text = string.Empty;
         index = 0;
         StartCoroutine(TypeLine());
     }
-
     IEnumerator TypeLine()
     {
         foreach (char c in lines[index].ToCharArray())
@@ -44,7 +40,6 @@ public class DialogGenerator : MonoBehaviour
             yield return new WaitForSeconds(textSpeed);
         }
     }
-
     void NextLine()
     {
         if (index < lines.Length - 1)
@@ -55,7 +50,8 @@ public class DialogGenerator : MonoBehaviour
         }
         else
         {
-            gameObject.SetActive(false);
+            //textComponent.text = string.Empty;
+            dialogueBox.SetActive(false);
         }
     }
 }

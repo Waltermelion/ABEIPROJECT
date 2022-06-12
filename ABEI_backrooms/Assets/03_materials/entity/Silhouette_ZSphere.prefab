@@ -11,6 +11,10 @@ GameObject:
   - component: {fileID: 2964360370999544803}
   - component: {fileID: 2201237227267376198}
   - component: {fileID: 4136744075044040844}
+  - component: {fileID: 8584286207183228357}
+  - component: {fileID: 3382886221667785217}
+  - component: {fileID: 115111968332505910}
+  - component: {fileID: 6825666628786351174}
   m_Layer: 0
   m_Name: Silhouette_ZSphere
   m_TagString: Untagged
@@ -81,3 +85,60 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &8584286207183228357
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2479326847194370393}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.07429023, y: 0.076552264, z: 0.025335452}
+  m_Center: {x: -0.0000785441, y: 0.0014758053, z: -0.016083572}
+--- !u!114 &3382886221667785217
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2479326847194370393}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 17f2af3c10e23ad44bb9698c5cbdb0af, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ipt: {fileID: 0}
+  textComponent: {fileID: 0}
+  dialogueBox: {fileID: 0}
+  lines:
+  - Face your fears...
+  textSpeed: 0.3
+--- !u!65 &115111968332505910
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2479326847194370393}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.11813728, y: 0.076552264, z: 0.08601097}
+  m_Center: {x: 0.0022229839, y: 0.0014758059, z: 0.014254208}
+--- !u!65 &6825666628786351174
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2479326847194370393}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.074290216, y: 0.076552264, z: 0.025335448}
+  m_Center: {x: -0.00007854354, y: 0.0014758053, z: -0.016083568}
