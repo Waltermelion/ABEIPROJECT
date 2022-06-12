@@ -8,6 +8,8 @@ TagManager:
   - lapide
   - estatua
   - dialogue
+  - lvl2startdoor
+  - lvl2enddoor
   layers:
   - Default
   - TransparentFX

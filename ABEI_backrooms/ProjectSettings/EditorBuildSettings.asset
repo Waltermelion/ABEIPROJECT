@@ -14,4 +14,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/01_Scene/Level_pontoexclamation.unity
     guid: a7fad43b6ed495f49a2c1e21de5c0a92
+  - enabled: 1
+    path: Assets/01_Scene/Level_theTorment.unity
+    guid: 5621b33cbdbc3bd4faad6fe3de3330e7
+  - enabled: 1
+    path: Assets/01_Scene/Ending.unity
+    guid: e00a25954dd23ab4c956fb483a2756be
   m_configObjects: {}
