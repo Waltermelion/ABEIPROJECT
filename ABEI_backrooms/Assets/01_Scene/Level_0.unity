@@ -14,7 +14,7 @@ OcclusionCullingSettings:
 RenderSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 9
-  m_Fog: 1
+  m_Fog: 0
   m_FogColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
   m_FogMode: 3
   m_FogDensity: 0.02
@@ -11248,14 +11248,6 @@ PrefabInstance:
     - target: {fileID: 3129932109893544512, guid: 12c673aecbfbcfe4f85d7dbe0cd77443, type: 3}
       propertyPath: m_Enabled
       value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3152896633778556968, guid: 12c673aecbfbcfe4f85d7dbe0cd77443, type: 3}
-      propertyPath: _amplitude
-      value: 0.005
-      objectReference: {fileID: 0}
-    - target: {fileID: 3152896633778556968, guid: 12c673aecbfbcfe4f85d7dbe0cd77443, type: 3}
-      propertyPath: _frequency
-      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 4171943381206475222, guid: 12c673aecbfbcfe4f85d7dbe0cd77443, type: 3}
       propertyPath: VideoMode

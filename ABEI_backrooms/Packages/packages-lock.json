@@ -1,11 +1,5 @@
 {
   "dependencies": {
-    "com.glairedaggers.retrotvfx": {
-      "version": "file:C:/Users/Lherme/Downloads/RetroTVFX-master/RetroTVFX-master",
-      "depth": 0,
-      "source": "local",
-      "dependencies": {}
-    },
     "com.unity.collab-proxy": {
       "version": "1.15.13",
       "depth": 0,
