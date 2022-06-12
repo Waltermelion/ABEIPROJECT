@@ -16,7 +16,6 @@ public class LapideClicker : MonoBehaviour
             {
                 audioSource3.PlayOneShot(lapideRotationSound);
                 hit.transform.Rotate(0f,45f,0f);
-                Debug.Log(hit.transform.localEulerAngles);
             }
         }
     }

@@ -159,7 +159,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2964360370999544803, guid: 65a7974a6fe35d2489a7415a6fe20e52, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 14.775491
+      value: 13.76
       objectReference: {fileID: 0}
     - target: {fileID: 2964360370999544803, guid: 65a7974a6fe35d2489a7415a6fe20e52, type: 3}
       propertyPath: m_LocalPosition.y
@@ -167,7 +167,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2964360370999544803, guid: 65a7974a6fe35d2489a7415a6fe20e52, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 12.219545
+      value: 12.28
       objectReference: {fileID: 0}
     - target: {fileID: 2964360370999544803, guid: 65a7974a6fe35d2489a7415a6fe20e52, type: 3}
       propertyPath: m_LocalRotation.w
@@ -840,7 +840,7 @@ MonoBehaviour:
   - {fileID: 936393215}
   - {fileID: 1563049446}
   allRotateded: 0
-  statueAnime: {fileID: 0}
+  statueAnime: {fileID: 7662526627892587207}
 --- !u!1 &833301241
 GameObject:
   m_ObjectHideFlags: 0
@@ -2744,10 +2744,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1581952720388038297, guid: 30cf13ef1e9d44740afa246c22ee15a8, type: 3}
-      propertyPath: m_Controller
-      value: 
-      objectReference: {fileID: 9100000, guid: b95eb2752c75d7c4fac7a2a1922a0063, type: 2}
     - target: {fileID: 7392564845210607810, guid: 30cf13ef1e9d44740afa246c22ee15a8, type: 3}
       propertyPath: m_Name
       value: socha_100kuw
@@ -2798,3 +2794,8 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 30cf13ef1e9d44740afa246c22ee15a8, type: 3}
+--- !u!95 &7662526627892587207 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 1581952720388038297, guid: 30cf13ef1e9d44740afa246c22ee15a8, type: 3}
+  m_PrefabInstance: {fileID: 7662526627892587206}
+  m_PrefabAsset: {fileID: 0}

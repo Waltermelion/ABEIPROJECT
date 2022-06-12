@@ -8,9 +8,13 @@ public class LapideManager : MonoBehaviour
     public Animator statueAnime;
     void Update()
     {
-        if (allRotated())
-            
+        if (allRotateded)
             return;
+        if (allRotated())
+        {
+            statueAnime.SetTrigger("lapidesRotatings");
+            allRotateded = true;
+        }
         allRotated();
     }
     private bool allRotated() {
