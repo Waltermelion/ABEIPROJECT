@@ -1,7 +1,7 @@
-using System;
 using UnityEngine;
 using UnityEngine.AI;
 using Random = UnityEngine.Random;
+using UnityEngine.SceneManagement;
 
 public class EnemyAi : MonoBehaviour
 {
@@ -17,6 +17,8 @@ public class EnemyAi : MonoBehaviour
 
     private bool playerIsDead;
 
+    [SerializeField] private GameObject deathScreen;
+
     //para patrulhar
     public Vector3 walkPoint;
     bool walkPointSet;
@@ -24,7 +26,6 @@ public class EnemyAi : MonoBehaviour
 
     private void Awake()
     {
-        playerAnimator = GameObject.Find("Player").GetComponent<Animator>();
         fov = GetComponent<FieldOfView>();
         player = GameObject.Find("Player").transform;
         agent = GetComponent<NavMeshAgent>();
@@ -33,7 +34,7 @@ public class EnemyAi : MonoBehaviour
     private void Update()
     {
         if (!fov.canSeePlayer) Patroling();
-        if (fov.canSeePlayer) ChasePlayer();
+        if (fov.canSeePlayer && !playerIsDead) ChasePlayer();
     }
 
     private void Patroling()
@@ -72,15 +73,27 @@ public class EnemyAi : MonoBehaviour
         if (collision.gameObject.tag == "Player")
         {
             //play animation
-            killPlayer();
+            KillPlayer();
         }
     }
 
-    private void killPlayer()
+    private void KillPlayer()
     {
         //when trigger inside animation is triggered, kill the player
         //play player death animation, provavelmente uma animação da câmara a cair no chão
-        playerAnimator.Play("Death");
         playerIsDead = true;
+        playerAnimator.SetTrigger("IsDead");
+        /*player.gameObject.GetComponent<PlayerLook>().enabled = false;
+        player.gameObject.GetComponent<PlayerMotor>().enabled = false;
+        player.gameObject.GetComponent<CharacterController>().enabled = false;*/
+        player.gameObject.GetComponent<InputManager>().enabled = false;
+        player.gameObject.GetComponent<Collider>().enabled = false;
+        deathScreen.SetActive(true);
+        Invoke("ReturnToMm",5f);
+    }
+
+    private void ReturnToMm()
+    {
+        SceneManager.LoadScene("MainMenu");
     }
 }

@@ -187,7 +187,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   shader: {fileID: 4800000, guid: 739c6569a1eb0c448804a9e0e49f34b1, type: 3}
   FilterQuality: 1
-  VideoMode: 1
+  VideoMode: 0
   DisplaySizeX: 960
   DisplaySizeY: 480
   StretchToDisplay: 1
@@ -227,7 +227,6 @@ GameObject:
   - component: {fileID: 4350740967434164128}
   - component: {fileID: 4350740967434164139}
   - component: {fileID: 4350740967434164142}
-  - component: {fileID: 4350740967434164132}
   - component: {fileID: 4350740967434164137}
   - component: {fileID: 4350740967434164138}
   - component: {fileID: 4350740967434164136}
@@ -354,25 +353,6 @@ CharacterController:
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0.001
   m_Center: {x: 0, y: 0, z: 0}
---- !u!95 &4350740967434164132
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4350740967434164129}
-  m_Enabled: 0
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: a0c919db5832357459817f9236864d67, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!114 &4350740967434164137
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -585,9 +565,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 154511814433515013}
+  - component: {fileID: 2347101931138610280}
   m_Layer: 6
   m_Name: CamBreath
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -607,3 +588,22 @@ Transform:
   m_Father: {fileID: 4350740967434164133}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &2347101931138610280
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8143681081478245140}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: a0c919db5832357459817f9236864d67, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
