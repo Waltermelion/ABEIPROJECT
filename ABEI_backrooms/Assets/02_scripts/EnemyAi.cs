@@ -19,6 +19,8 @@ public class EnemyAi : MonoBehaviour
 
     [SerializeField] private GameObject deathScreen;
 
+    [SerializeField] private AudioSource audioSource1;
+
     //para patrulhar
     public Vector3 walkPoint;
     bool walkPointSet;
@@ -39,6 +41,10 @@ public class EnemyAi : MonoBehaviour
 
     private void Patroling()
     {
+        if (audioSource1.isPlaying)
+        {
+            audioSource1.Stop();
+        }
         if (!walkPointSet) SearchWalkPoint();
 
         if (walkPointSet)
@@ -66,6 +72,10 @@ public class EnemyAi : MonoBehaviour
     private void ChasePlayer()
     {
         agent.SetDestination(player.transform.position);
+        if (audioSource1.isPlaying == false)
+        {
+            audioSource1.Play();
+        }
     }
 
     private void OnCollisionEnter(Collision collision)
@@ -83,9 +93,6 @@ public class EnemyAi : MonoBehaviour
         //play player death animation, provavelmente uma animação da câmara a cair no chão
         playerIsDead = true;
         playerAnimator.SetTrigger("IsDead");
-        /*player.gameObject.GetComponent<PlayerLook>().enabled = false;
-        player.gameObject.GetComponent<PlayerMotor>().enabled = false;
-        player.gameObject.GetComponent<CharacterController>().enabled = false;*/
         player.gameObject.GetComponent<InputManager>().enabled = false;
         player.gameObject.GetComponent<Collider>().enabled = false;
         deathScreen.SetActive(true);
