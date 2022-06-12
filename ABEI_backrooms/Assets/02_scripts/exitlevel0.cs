@@ -8,7 +8,7 @@ public class exitlevel0 : MonoBehaviour
     {
         if (col.transform.CompareTag("exit"))
         {
-            SceneManager.LoadScene("Level_tbd");
+            SceneManager.LoadScene("Level_pontoexclamation");
         }
     }
 }
