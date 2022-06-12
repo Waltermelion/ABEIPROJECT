@@ -96,6 +96,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4599f60ab30007a49b7fdeb37737f579, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ipt: {fileID: 4350740967434164143}
+  dist: 5
+  audioSource3: {fileID: 4084283528545214309}
+  lapideRotationSound: {fileID: 8300000, guid: 988c7d027e68baa40a8240d6bb9a4978, type: 3}
 --- !u!1 &4350740966239763378
 GameObject:
   m_ObjectHideFlags: 0

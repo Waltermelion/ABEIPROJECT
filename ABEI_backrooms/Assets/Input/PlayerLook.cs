@@ -1,8 +1,4 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-
 public class PlayerLook : MonoBehaviour
 {
     public Camera cam;
@@ -16,7 +12,6 @@ public class PlayerLook : MonoBehaviour
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
     }
-
     public void ProcessLook(Vector2 input)
     {
         float mouseX = input.x;

@@ -1,9 +1,5 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using Random = UnityEngine.Random;
-
 public class PlayerMotor : MonoBehaviour
 {
     private CharacterController controller;
@@ -23,12 +19,6 @@ public class PlayerMotor : MonoBehaviour
         controller = GetComponent<CharacterController>(); 
         inputManager = GetComponent<InputManager>();
     }
-
-    private void Update()
-    {
-        
-    }
-
     public void ProcessMove(Vector3 input)
     {
         Vector3 moveDirection = Vector3.zero;
@@ -41,7 +31,6 @@ public class PlayerMotor : MonoBehaviour
             PlayFootStepAudio();
         }
     }
-
     void PlayFootStepAudio()
     {
         int n = Random.Range(1, footStepSound.Length);

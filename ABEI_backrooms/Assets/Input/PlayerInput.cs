@@ -62,6 +62,15 @@ public partial class @PlayerInput : IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""MouseClick"",
+                    ""type"": ""Button"",
+                    ""id"": ""fa945be7-bb04-4708-ba6c-cdcb7559014b"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
@@ -152,6 +161,17 @@ public partial class @PlayerInput : IInputActionCollection2, IDisposable
                     ""action"": ""OpenDoor"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""7ecf44f4-8126-4275-aa69-3ee1e60b8fad"",
+                    ""path"": ""<Mouse>/leftButton"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""MouseClick"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         }
@@ -164,6 +184,7 @@ public partial class @PlayerInput : IInputActionCollection2, IDisposable
         m_OnFoot_Jump = m_OnFoot.FindAction("Jump", throwIfNotFound: true);
         m_OnFoot_Look = m_OnFoot.FindAction("Look", throwIfNotFound: true);
         m_OnFoot_OpenDoor = m_OnFoot.FindAction("OpenDoor", throwIfNotFound: true);
+        m_OnFoot_MouseClick = m_OnFoot.FindAction("MouseClick", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -227,6 +248,7 @@ public partial class @PlayerInput : IInputActionCollection2, IDisposable
     private readonly InputAction m_OnFoot_Jump;
     private readonly InputAction m_OnFoot_Look;
     private readonly InputAction m_OnFoot_OpenDoor;
+    private readonly InputAction m_OnFoot_MouseClick;
     public struct OnFootActions
     {
         private @PlayerInput m_Wrapper;
@@ -235,6 +257,7 @@ public partial class @PlayerInput : IInputActionCollection2, IDisposable
         public InputAction @Jump => m_Wrapper.m_OnFoot_Jump;
         public InputAction @Look => m_Wrapper.m_OnFoot_Look;
         public InputAction @OpenDoor => m_Wrapper.m_OnFoot_OpenDoor;
+        public InputAction @MouseClick => m_Wrapper.m_OnFoot_MouseClick;
         public InputActionMap Get() { return m_Wrapper.m_OnFoot; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -256,6 +279,9 @@ public partial class @PlayerInput : IInputActionCollection2, IDisposable
                 @OpenDoor.started -= m_Wrapper.m_OnFootActionsCallbackInterface.OnOpenDoor;
                 @OpenDoor.performed -= m_Wrapper.m_OnFootActionsCallbackInterface.OnOpenDoor;
                 @OpenDoor.canceled -= m_Wrapper.m_OnFootActionsCallbackInterface.OnOpenDoor;
+                @MouseClick.started -= m_Wrapper.m_OnFootActionsCallbackInterface.OnMouseClick;
+                @MouseClick.performed -= m_Wrapper.m_OnFootActionsCallbackInterface.OnMouseClick;
+                @MouseClick.canceled -= m_Wrapper.m_OnFootActionsCallbackInterface.OnMouseClick;
             }
             m_Wrapper.m_OnFootActionsCallbackInterface = instance;
             if (instance != null)
@@ -272,6 +298,9 @@ public partial class @PlayerInput : IInputActionCollection2, IDisposable
                 @OpenDoor.started += instance.OnOpenDoor;
                 @OpenDoor.performed += instance.OnOpenDoor;
                 @OpenDoor.canceled += instance.OnOpenDoor;
+                @MouseClick.started += instance.OnMouseClick;
+                @MouseClick.performed += instance.OnMouseClick;
+                @MouseClick.canceled += instance.OnMouseClick;
             }
         }
     }
@@ -282,5 +311,6 @@ public partial class @PlayerInput : IInputActionCollection2, IDisposable
         void OnJump(InputAction.CallbackContext context);
         void OnLook(InputAction.CallbackContext context);
         void OnOpenDoor(InputAction.CallbackContext context);
+        void OnMouseClick(InputAction.CallbackContext context);
     }
 }

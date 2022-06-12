@@ -3,15 +3,19 @@ using UnityEngine;
 public class LapideRotate : MonoBehaviour
 {
     public bool correctlyRotated;
-    public Vector3 correctRotation;
-    public Vector3 startingRotation;
+    public float correctRotation;
+    public float startingRotation;
 
     private void Start()
     {
-        startingRotation = transform.localEulerAngles;
+        transform.Rotate(0f,startingRotation,0f);
     }
+
     void Update()
     {
-        
+        if (correctRotation == transform.localEulerAngles.y)
+        {
+            correctlyRotated = true;
+        }
     }
 }
