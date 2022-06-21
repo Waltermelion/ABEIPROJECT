@@ -6,6 +6,8 @@ public class LapideManager : MonoBehaviour
     public bool allRotateded;
 
     public Animator statueAnime;
+    public AudioClip slide;
+    public AudioSource source;
     void Update()
     {
         if (allRotateded)
@@ -13,6 +15,7 @@ public class LapideManager : MonoBehaviour
         if (allRotated())
         {
             statueAnime.SetTrigger("lapidesRotatings");
+            source.PlayOneShot(slide);
             allRotateded = true;
         }
         allRotated();

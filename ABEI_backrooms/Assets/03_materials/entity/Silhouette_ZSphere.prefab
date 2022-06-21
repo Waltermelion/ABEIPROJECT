@@ -115,7 +115,7 @@ MonoBehaviour:
   dialogueBox: {fileID: 0}
   lines:
   - Face your fears...
-  textSpeed: 0.3
+  textSpeed: 0.5
 --- !u!65 &115111968332505910
 BoxCollider:
   m_ObjectHideFlags: 0
