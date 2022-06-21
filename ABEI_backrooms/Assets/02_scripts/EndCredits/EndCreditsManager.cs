@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 public class EndCreditsManager : MonoBehaviour
@@ -7,7 +8,6 @@ public class EndCreditsManager : MonoBehaviour
     {
         SceneManager.LoadScene("MainMenu");
     }
-
     public void ButtonAppear()
     {
         backButton.SetActive(true);
