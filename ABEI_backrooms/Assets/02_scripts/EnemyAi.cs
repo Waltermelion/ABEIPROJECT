@@ -23,7 +23,7 @@ public class EnemyAi : MonoBehaviour
 
     //para patrulhar
     public Vector3 walkPoint;
-    bool walkPointSet;
+    private bool walkPointSet;
     public float walkPointRange;
 
     private void Awake()
