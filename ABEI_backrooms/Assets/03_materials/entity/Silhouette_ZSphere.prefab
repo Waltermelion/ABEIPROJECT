@@ -14,10 +14,9 @@ GameObject:
   - component: {fileID: 8584286207183228357}
   - component: {fileID: 3382886221667785217}
   - component: {fileID: 115111968332505910}
-  - component: {fileID: 6825666628786351174}
   m_Layer: 0
   m_Name: Silhouette_ZSphere
-  m_TagString: Untagged
+  m_TagString: dialogue
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -129,16 +128,3 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.11813728, y: 0.076552264, z: 0.08601097}
   m_Center: {x: 0.0022229839, y: 0.0014758059, z: 0.014254208}
---- !u!65 &6825666628786351174
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2479326847194370393}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.074290216, y: 0.076552264, z: 0.025335448}
-  m_Center: {x: -0.00007854354, y: 0.0014758053, z: -0.016083568}

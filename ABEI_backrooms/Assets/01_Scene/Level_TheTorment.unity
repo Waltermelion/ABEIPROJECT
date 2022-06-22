@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.07144172, g: 0.067063875, b: 0.049516425, a: 1}
+  m_IndirectSpecularColor: {r: 0.0710947, g: 0.066756286, b: 0.049118906, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -144,10 +144,6 @@ PrefabInstance:
     - target: {fileID: 2479326847194370393, guid: 65a7974a6fe35d2489a7415a6fe20e52, type: 3}
       propertyPath: m_Name
       value: Silhouette_ZSphere
-      objectReference: {fileID: 0}
-    - target: {fileID: 2479326847194370393, guid: 65a7974a6fe35d2489a7415a6fe20e52, type: 3}
-      propertyPath: m_TagString
-      value: dialogue
       objectReference: {fileID: 0}
     - target: {fileID: 2964360370999544803, guid: 65a7974a6fe35d2489a7415a6fe20e52, type: 3}
       propertyPath: m_RootOrder
