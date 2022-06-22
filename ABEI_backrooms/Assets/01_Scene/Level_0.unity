@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.319659, g: 0.3100802, b: 0.2633705, a: 1}
+  m_IndirectSpecularColor: {r: 0.31965983, g: 0.31008062, b: 0.26337078, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -70504,13 +70504,13 @@ Transform:
   - {fileID: 1653701731}
   - {fileID: 1226397911}
   - {fileID: 2024622184}
+  - {fileID: 1081667453}
   - {fileID: 215792589}
   - {fileID: 1047131786}
-  - {fileID: 1805142280}
   - {fileID: 1389465464}
-  - {fileID: 1081667453}
-  - {fileID: 820073743}
+  - {fileID: 1805142280}
   - {fileID: 1942963509}
+  - {fileID: 820073743}
   m_Father: {fileID: 1587372557}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -85676,6 +85676,10 @@ PrefabInstance:
       propertyPath: playerAnimator
       value: 
       objectReference: {fileID: 482207699}
+    - target: {fileID: 3518234274974171152, guid: 453fcae98e52d404989991c7cab1eded, type: 3}
+      propertyPath: walkPointRange
+      value: 10.4
+      objectReference: {fileID: 0}
     - target: {fileID: 3518234274974171154, guid: 453fcae98e52d404989991c7cab1eded, type: 3}
       propertyPath: m_RootOrder
       value: 0

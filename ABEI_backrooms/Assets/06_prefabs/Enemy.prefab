@@ -1264,6 +1264,9 @@ MonoBehaviour:
     m_Bits: 64
   playerAnimator: {fileID: 0}
   deathScreen: {fileID: 0}
+  blood: {fileID: 0}
+  playerDeath1: {fileID: 8300000, guid: 21a7a4350fcbd4b4aab0f16fa06d0987, type: 3}
+  playerDeath2: {fileID: 8300000, guid: e85a0aa5f3dac5d4e940f0a4e23e8dcf, type: 3}
   audioSource1: {fileID: 7105522124869991956}
   walkPoint: {x: 0, y: 0, z: 0}
   walkPointRange: 20.45

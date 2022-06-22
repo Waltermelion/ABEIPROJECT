@@ -12,13 +12,16 @@ public class EnemyAi : MonoBehaviour
     public LayerMask whatIsGround, whatIsPlayer;
 
     private FieldOfView fov;
-
+    
+    //PLayerStuff
     public Animator playerAnimator;
-
     private bool playerIsDead;
-
+    private bool playerScreamed;
     [SerializeField] private GameObject deathScreen;
-
+    [SerializeField] private ParticleSystem blood;
+    [SerializeField] private AudioClip playerDeath1;
+    [SerializeField] private AudioClip playerDeath2;
+    
     [SerializeField] private AudioSource audioSource1;
 
     //para patrulhar
@@ -92,6 +95,13 @@ public class EnemyAi : MonoBehaviour
         //when trigger inside animation is triggered, kill the player
         //play player death animation, provavelmente uma animação da câmara a cair no chão
         playerIsDead = true;
+        blood.Play();
+        audioSource1.PlayOneShot(playerDeath1);
+        if (!playerScreamed)
+        {
+            audioSource1.PlayOneShot(playerDeath2);
+            playerScreamed = true;
+        }
         playerAnimator.SetTrigger("IsDead");
         player.gameObject.GetComponent<InputManager>().enabled = false;
         player.gameObject.GetComponent<Collider>().enabled = false;

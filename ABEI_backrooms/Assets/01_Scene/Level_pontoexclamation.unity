@@ -15406,6 +15406,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 1939985083}
     m_Modifications:
     - target: {fileID: 3518234274974171152, guid: 453fcae98e52d404989991c7cab1eded, type: 3}
+      propertyPath: blood
+      value: 
+      objectReference: {fileID: 1649311044}
+    - target: {fileID: 3518234274974171152, guid: 453fcae98e52d404989991c7cab1eded, type: 3}
       propertyPath: player
       value: 
       objectReference: {fileID: 731077964}
@@ -23010,6 +23014,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1939985083}
     m_Modifications:
+    - target: {fileID: 3518234274974171152, guid: 453fcae98e52d404989991c7cab1eded, type: 3}
+      propertyPath: blood
+      value: 
+      objectReference: {fileID: 1649311044}
     - target: {fileID: 3518234274974171152, guid: 453fcae98e52d404989991c7cab1eded, type: 3}
       propertyPath: player
       value: 
@@ -56412,6 +56420,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 1939985083}
     m_Modifications:
     - target: {fileID: 3518234274974171152, guid: 453fcae98e52d404989991c7cab1eded, type: 3}
+      propertyPath: blood
+      value: 
+      objectReference: {fileID: 1649311044}
+    - target: {fileID: 3518234274974171152, guid: 453fcae98e52d404989991c7cab1eded, type: 3}
       propertyPath: player
       value: 
       objectReference: {fileID: 731077964}
@@ -72972,6 +72984,30 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2235853214313045155, guid: e3c58fa790949194a8a766422dbd481b, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2235853214313045155, guid: e3c58fa790949194a8a766422dbd481b, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2235853214313045155, guid: e3c58fa790949194a8a766422dbd481b, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2235853214313045155, guid: e3c58fa790949194a8a766422dbd481b, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2235853214313045155, guid: e3c58fa790949194a8a766422dbd481b, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2235853214313045155, guid: e3c58fa790949194a8a766422dbd481b, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5638630713800440322, guid: e3c58fa790949194a8a766422dbd481b, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -73060,6 +73096,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: DeathScreen
       objectReference: {fileID: 0}
+    - target: {fileID: 5638630713800440323, guid: e3c58fa790949194a8a766422dbd481b, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7300186036820954827, guid: e3c58fa790949194a8a766422dbd481b, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: e0677da28ce3e6e4f880ba95a1ae98c6, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e3c58fa790949194a8a766422dbd481b, type: 3}
 --- !u!1 &1298662528 stripped
@@ -75672,6 +75716,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1939985083}
     m_Modifications:
+    - target: {fileID: 3518234274974171152, guid: 453fcae98e52d404989991c7cab1eded, type: 3}
+      propertyPath: blood
+      value: 
+      objectReference: {fileID: 1649311044}
     - target: {fileID: 3518234274974171152, guid: 453fcae98e52d404989991c7cab1eded, type: 3}
       propertyPath: player
       value: 
@@ -88478,6 +88526,11 @@ Transform:
   m_Father: {fileID: 461206423}
   m_RootOrder: 22
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!198 &1649311044 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 7861039633723002942, guid: 12c673aecbfbcfe4f85d7dbe0cd77443, type: 3}
+  m_PrefabInstance: {fileID: 1910368772}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1649927927
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -96546,6 +96599,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 1939985083}
     m_Modifications:
     - target: {fileID: 3518234274974171152, guid: 453fcae98e52d404989991c7cab1eded, type: 3}
+      propertyPath: blood
+      value: 
+      objectReference: {fileID: 1649311044}
+    - target: {fileID: 3518234274974171152, guid: 453fcae98e52d404989991c7cab1eded, type: 3}
       propertyPath: player
       value: 
       objectReference: {fileID: 731077964}
@@ -102155,6 +102212,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2055340889517884387, guid: 12c673aecbfbcfe4f85d7dbe0cd77443, type: 3}
+      propertyPath: m_Name
+      value: BloodSplat
+      objectReference: {fileID: 0}
     - target: {fileID: 4350740967434164129, guid: 12c673aecbfbcfe4f85d7dbe0cd77443, type: 3}
       propertyPath: m_Name
       value: Player
@@ -110964,6 +111025,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1939985083}
     m_Modifications:
+    - target: {fileID: 3518234274974171152, guid: 453fcae98e52d404989991c7cab1eded, type: 3}
+      propertyPath: blood
+      value: 
+      objectReference: {fileID: 1649311044}
     - target: {fileID: 3518234274974171152, guid: 453fcae98e52d404989991c7cab1eded, type: 3}
       propertyPath: player
       value: 
